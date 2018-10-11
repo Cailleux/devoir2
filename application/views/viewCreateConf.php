@@ -38,6 +38,6 @@ Choix de niveau: <select id="selectNiveaux">
         }
 
     ?></select></p>
-    <input type="button" value="Insérer une conférence" id="validCreateConf" onclick='InsertNewTime()'/>
+    <input type="button" value="Insérer une conférence" id="validCreateConf" onclick='InsertNewConf()'/>
 </body>
 </html>
