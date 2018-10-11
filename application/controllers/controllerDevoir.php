@@ -12,6 +12,8 @@ class controllerDevoir extends CI_Controller {
 		$data['lesNiveaux']=$this->modelNiveau->getAllNiveaux();
 		$this->load->model("modelTechnologie");
 		$data['lesTechnologies']=$this->modelTechnologie->getAllTechnologies();
+		$this->load->model("modelConf");
+		$data['numeroConf']=$this->modelConf->getIdConf();
 		$this->load->view('viewCreateConf',$data);
 
     }

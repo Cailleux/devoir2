@@ -9,7 +9,7 @@
     <script src="JS/fonctions.js"></script>
 
 <body>
-<p>Numero de la conference: <input class="form-control" name="test" type="text" value='1' readonly="readonly"> Titre de la conference: <input type="text" name="titreConf"/></p>
+<p>Numero de la conference: <input class="form-control" name="test" type="text" value='<?php echo ($numeroConf[0]->maxConf)+1 ?>' readonly="readonly"> Titre de la conference: <input type="text" name="titreConf"/></p>
 
 <p>Contenu de la conférence: <input type="text" name="titreConf"/>
 Choix de niveau: <select id="selectNiveaux">
