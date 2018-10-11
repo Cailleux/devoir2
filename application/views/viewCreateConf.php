@@ -11,7 +11,7 @@
 <body>
 <p>Numero de la conference: <input class="form-control" name="test" type="text" value='<?php echo ($numeroConf[0]->maxConf)+1 ?>' readonly="readonly"> Titre de la conference: <input type="text" name="titreConf"/></p>
 
-<p>Contenu de la conférence: <input type="text" name="titreConf"/>
+<p>Contenu de la conférence: <input type="text" name="contenueConf"/>
 Choix de niveau: <select id="selectNiveaux">
 <?php
         foreach($lesNiveaux as $unNiveau){
@@ -38,6 +38,6 @@ Choix de niveau: <select id="selectNiveaux">
         }
 
     ?></select></p>
-    <input type="button" value="Insérer une conférence" id="validCreateConf"/>
+    <input type="button" value="Insérer une conférence" id="validCreateConf" onclick='InsertNewTime()'/>
 </body>
 </html>
